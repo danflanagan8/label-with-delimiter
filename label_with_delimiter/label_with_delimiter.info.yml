@@ -1,0 +1,7 @@
+name: Label with Delimiter
+type: module
+description: 'Adds field formatter for entity reference fields.'
+# core: 8.x
+package: field
+version: VERSION
+core: '8.x'

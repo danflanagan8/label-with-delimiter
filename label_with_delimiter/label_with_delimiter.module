@@ -1,0 +1,13 @@
+<?php
+
+function label_with_delimiter_theme($existing, $type, $theme, $path) {
+  return [
+    'field__label_with_delimiter' => [
+      'base hook' => 'field',
+    ],
+  ];
+}
+
+function label_with_delimiter_preprocess_field__label_with_delimiter(&$variables){
+  $variables['delimiter'] = $variables['element']['#delimiter'];
+}
